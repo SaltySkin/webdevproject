@@ -25,7 +25,7 @@ ul.navbar li a.active {
 ul.navbar li.right {float: right;}
 
 /*Dropdown for Navigation bar*/
-ul.navbar li a, .dropbtn .name {
+ul.navbar li a, .dropbtn {
   display: inline-block;
   color: white;
   text-align: center;
@@ -38,7 +38,7 @@ ul.navbar li a:hover, .dropdown:hover .dropbtn {
 }
 
 
-/*Inline block displays inline but keep paddubg margins*/
+/*Inline block displays inline but keep padding margins*/
 ul.navbar li.dropdown {
   display: inline-block;
 }
@@ -117,7 +117,7 @@ ul.navbar li.dropdown {
   }
 }
 
-
+/*For Images*/
 .responsive {
   width: 100%;
   max-width: 400px;
@@ -159,8 +159,10 @@ ul.navbar li.dropdown {
   color: white;
 }
 
+/*page cards*/
 .maintxtbck{
   background-color: lightgray;
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
 }
 
 .buycard {
