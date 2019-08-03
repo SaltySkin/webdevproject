@@ -4,7 +4,7 @@ body{
   background-color: #EAEAEA;
 }
 
-ul {
+ul.navbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -12,13 +12,20 @@ ul {
   background-color: brown;
 }
 
-li {
+ul.navbar li {
   float: left;
 }
 
+ul.navbar li a.active {
+  background-color: #BB9457;
+  color: white;
+  text-align: center;
+}
+
+ul.navbar li.right {float: right;}
 
 /*Dropdown for Navigation bar*/
-li a, .dropbtn .name {
+ul.navbar li a, .dropbtn .name {
   display: inline-block;
   color: white;
   text-align: center;
@@ -26,21 +33,22 @@ li a, .dropbtn .name {
   text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+ul.navbar li a:hover, .dropdown:hover .dropbtn {
   background-color: #BB9457;
 }
 
 
 /*Inline block displays inline but keep paddubg margins*/
-li.dropdown {
+ul.navbar li.dropdown {
   display: inline-block;
 }
+
 
 /*Nav Bar Dropdown content*/
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: brown;
   min-width: 150px;
   box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -60,6 +68,10 @@ li.dropdown {
   display: block;
 }
 
+@media screen and (max-width: 600px) {
+  ul.navbar li.right,
+  ul.navbar li {float: none;}
+}
 
 /*header*/
 .header {
