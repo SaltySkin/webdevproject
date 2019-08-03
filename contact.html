@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<!--Navigation Bar-->
+
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="buy.html">Buy</a></li>
+  <li><a href="Locations.html">Locations</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">About</a>
+    <div class="dropdown-content">
+      <a href="history.html">History</a>
+      <a href="quality.html">Quality</a>
+    </div>
+  </li>
+  <li><a href="contact.html">Contact Us</a></li>
+  <li><li style="float:right"><a href="signin.html">Sign Up</a></li>
+</ul>
+
+
+<div id="formDiv" style="align-items: center;" class="row">
+  <p>Let us know what you think!:</p>
+  <form id="contactus" class="column middle" action="javascript:;" onsubmit="submitForm();">
+    
+    First name: <br>
+
+    <input type="text" name="firstname" id="firstname" placeholder= "Type First Name" required=""><br><br>
+      
+    Last Name: <br>
+    
+    <input type="text" name="lastname" id="lastname" placeholder= "Type Last Name" required=""> <br><br>
+
+    Email: <br>
+    <input type="email" name="email" id="email" placeholder= "Type Email Address" required=""><br><br>
+
+    What do you wish to say: <br>
+    <textarea rows="4" cols="50" name="message" id="message" placeholder= "Type message" required=""></textarea><br><br>
+
+    <input type="submit" value="send"> 
+    <input type="button" name="clear" onclick="reset()" value="clear">
+
+
+  </form>
+</div>
+
+<div class="footer">
+  <h3 style="text-align: center;">Follow Us</h3>
+  <a href="https://wwww.facebook.com" target="_blank" class="fa fa-facebook"></a>
+  <a href="https://www.twitter.com" target="_blank" class="fa fa-twitter"></a>
+  <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
+</div>
+
+<script type="text/javascript">
+function submitForm(){
+
+	console.log("submitted");
+	console.log("firstname: " + document.getElementById("contactus")["firstname"].value);
+	console.log("lastname: " + document.getElementById("contactus")["lastname"].value);
+	console.log("message: " + document.getElementById("contactus")["message"].value);
+
+}
+function reset(){
+  document.getElementById("contactus").reset();
+}
+</script>
+</body>
+</html>
