@@ -1,7 +1,7 @@
 /*Navigation Bar*/
 
 body{
-  background-color: #EAEAEA;
+  background-color: #FFEECF;
 }
 
 ul.navbar {
@@ -9,7 +9,7 @@ ul.navbar {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: brown;
+  background-color: #894B00;
 }
 
 ul.navbar li {
@@ -33,8 +33,9 @@ ul.navbar li a, .dropbtn {
   text-decoration: none;
 }
 
+/*Hover colour change for nav bar*/
 ul.navbar li a:hover, .dropdown:hover .dropbtn {
-  background-color: #BB9457;
+  background-color: #C9A690;
 }
 
 
@@ -75,10 +76,11 @@ ul.navbar li.dropdown {
 
 /*header*/
 .header {
-  background-color: #99582A;
-  color: #FFE6A7;
+  background-color: #E8AE68;
+  color: #3A0000;
   padding: 4px;
   text-align: center;
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
 }
 
 
@@ -101,6 +103,9 @@ ul.navbar li.dropdown {
   width: 73%
 }
 
+.row.loccard{
+  background-color: #FFF4E0; box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+}
 
 /* Clear floats after the columns */
 .row:after{
@@ -123,12 +128,27 @@ ul.navbar li.dropdown {
   max-width: 400px;
   height: auto;
 }
+
+.parallax { 
+  background-image: url("images/parallaxback.jpg");
+  /* Set a specific height */
+  height: 400px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 /* Footer */
 .footer {
   padding: 20px;
   text-align: center;
-  background: #ddd;
+  background: #E8AE68;
   margin-top: 20px;
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
 }
 
 .fa {
@@ -147,21 +167,24 @@ ul.navbar li.dropdown {
 .fa-facebook {
   background: #3B5998;
   color: white;
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
 }
 
 .fa-twitter {
   background: #55ACEE;
   color: white;
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
 }
 
 .fa-instagram {
   background: #125688;
   color: white;
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
 }
 
 /*page cards*/
 .maintxtbck{
-  background-color: lightgray;
+  background-color: #FFF4E0;
   box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
 }
 
@@ -171,6 +194,7 @@ ul.navbar li.dropdown {
   margin: auto;
   text-align: center;
   font-family: arial;
+  background-color: #FFF4E0;
 }
 
 .price {
@@ -185,7 +209,6 @@ ul.navbar li.dropdown {
   color: white;
   background-color: #503B31;
   text-align: center;
-  cursor: pointer;
   width: 100%;
   font-size: 18px;
 }
