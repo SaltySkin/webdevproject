@@ -120,6 +120,12 @@ ul.navbar li.dropdown {
   .column.small, .column.medium, .column.large, .column{
     width: 100%;
   }
+  .row{
+    flex-direction: column-reverse;
+  }
+  .column.small{
+    margin-bottom: 20px;
+  }
 }
 
 /*For Images*/
