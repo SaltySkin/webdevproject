@@ -22,7 +22,9 @@ ul.navbar li a.active {
   text-align: center;
 }
 
-ul.navbar li.right {float: right;}
+ul.navbar li.right {
+  float: right;
+}
 
 /*Dropdown for Navigation bar*/
 ul.navbar li a, .dropbtn {
@@ -71,7 +73,9 @@ ul.navbar li.dropdown {
 
 @media screen and (max-width: 600px) {
   ul.navbar li.right,
-  ul.navbar li {float: none;}
+  ul.navbar li {
+    float: none;
+  }
 }
 
 /*header*/
