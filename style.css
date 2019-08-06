@@ -88,13 +88,14 @@ ul.navbar li.dropdown {
 }
 
 
-/* columns that floats next to each other */
+/* columns */
 .column {
   float: left;
   padding: 10px;
 }
 
-/*column */
+/*columns on my computer if they = 100% they stack instead of fit
+this is why they are all slightly less then they should be*/
 .column.small {
   width: 23%;
 }
@@ -217,6 +218,7 @@ ul.navbar li.dropdown {
 }
 */
 
+/*css for buy page*/
 .price {
   color: grey;
   font-size: 22px;
