@@ -118,6 +118,11 @@ ul.navbar li.dropdown {
   clear: both;
 }
 
+.pricebar{
+  position: fixed;
+  top: 60px; 
+  background-color: brown;
+}
 
 /* Responsive*/
 @media screen and (max-width: 800px) {
@@ -204,6 +209,13 @@ ul.navbar li.dropdown {
   font-family: arial;
   background-color: #FFF4E0;
 }
+
+/* 
+.buycardimg{
+  width:100%;
+  height: 300px;
+}
+*/
 
 .price {
   color: grey;

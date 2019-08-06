@@ -30,46 +30,52 @@
   <h1>Roasty Bean Coffee</h1>
 </div>
 
-
+<div class="pricebar" >
+    <h5>Total: </h5>  
+    <div id="totalPrice" >
+        <p><span id="totalPrice" ></span></p>
+    </div>
+    
+</div>
 <div>
   <div class="row">
     <div class="column small">
       <div class="buycard">
-      <img src="images/spilledbeans.jpg" alt="Coffee" style="width:100%">
+      <img src="images/openbeans.jpg" alt="Coffee" style="width:100%; height: 300px">
       <h1>Super Coffee</h1>
       <p class="price">€19.99</p>
       <p>The World's Best Coffee</p>
-      <p><button>Add to Cart</button></p>
+      <p><button onclick="added('Super Coffee', 19.99)">Add to Cart</button></p>
       </div>
     </div>
 
     <div class="column small">
       <div class="buycard">
-      <img src="images/frap.jpg" alt="Coffee" style="width:100%">
-      <h1>Fappachino</h1>
-      <p class="price">€19.99</p>
+      <img src="images/frap.jpg" alt="Coffee" style="width:100%;height: 300px">
+      <h1>Fresh Coffee</h1>
+      <p class="price">€9.99</p>
       <p>The World's Best Coffee</p>
-      <p><button>Add to Cart</button></p>
+      <p><button onclick="added('Fresh Coffee', 9.99)">Add to Cart</button></p>
       </div>
     </div>
 
     <div class="column small">
       <div class="buycard">
-      <img src="images/spilledbeans.jpg" alt="Coffee" style="width:100%">
-      <h1>Super Coffee</h1>
-      <p class="price">€19.99</p>
+      <img src="images/spilledbeans.jpg" alt="Coffee" style="width:100%;height: 300px">
+      <h1>Dark Roast</h1>
+      <p class="price">€15.00</p>
       <p>The World's Best Coffee</p>
-      <p><button>Add to Cart</button></p>
+      <p><button onclick="added('Dark Roast', 15)">Add to Cart</button></p>
       </div>
     </div>
 
     <div class="column small">
       <div class="buycard">
-      <img src="images/spilledbeans.jpg" alt="Coffee" style="width:100%">
-      <h1>Super Coffee</h1>
+      <img src="images/coffeebeans2.jpg" alt="Coffee" style="width:100%;height: 300px">
+      <h1>Fine Ground</h1>
       <p class="price">€19.99</p>
       <p>The World's Best Coffee</p>
-      <p><button>Add to Cart</button></p>
+      <p><button onclick="added('Fine Ground', 19.99)">Add to Cart</button></p>
       </div>
     </div>
   </div>
@@ -78,41 +84,41 @@
 <div class="row">
   <div class="column small">
     <div class="buycard">
-    <img src="images/spilledbeans.jpg" alt="Coffee" style="width:100%">
-    <h1>Super Coffee</h1>
-    <p class="price">€19.99</p>
+    <img src="images/mixedbeans.jpg" alt="Coffee" style="width:100%;height: 300px">
+    <h1>Mixed Coffee</h1>
+    <p class="price">€32.75</p>
     <p>The World's Best Coffee</p>
-    <p><button>Add to Cart</button></p>
+    <p><button onclick="added('Mixed Coffee', 32.75)">Add to Cart</button></p>
     </div>
   </div>
 
   <div class="column small">
     <div class="buycard">
-    <img src="images/spilledbeans.jpg" alt="Coffee" style="width:100%">
-    <h1>Super Coffee</h1>
-    <p class="price">€19.99</p>
+    <img src="images/coffeebags.jpg" alt="Coffee" style="width:100%;height: 300px">
+    <h1>Columbian</h1>
+    <p class="price">€22.50</p>
     <p>The World's Best Coffee</p>
-    <p><button>Add to Cart</button></p>
+    <p><button onclick="added('Columbian', 22.50)">Add to Cart</button></p>
     </div>
   </div>
 
   <div class="column small">
     <div class="buycard">
-    <img src="images/spilledbeans.jpg" alt="Coffee" style="width:100%">
-    <h1>Super Coffee</h1>
-    <p class="price">€19.99</p>
+    <img src="images/coffeebeans2.jpg" alt="Coffee" style="width:100%;height: 300px">
+    <h1>Nicaraguan</h1>
+    <p class="price">€5.50</p>
     <p>The World's Best Coffee</p>
-    <p><button>Add to Cart</button></p>
+    <p><button onclick="added('Nicaraguan', 5.50)">Add to Cart</button></p>
     </div>
   </div>
 
   <div class="column small">
     <div class="buycard">
-    <img src="images/spilledbeans.jpg" alt="Coffee" style="width:100%">
-    <h1>Super Coffee</h1>
-    <p class="price">€19.99</p>
+    <img src="images/coffeecup.jpg" alt="Coffee" style="width:100%;height: 300px">
+    <h1>Medium Roast</h1>
+    <p class="price">€25.99</p>
     <p>The World's Best Coffee</p>
-    <p><button>Add to Cart</button></p>
+    <p><button onclick="added('Medium Roast', 25.99)">Add to Cart</button></p>
     </div>
   </div>
 </div>
@@ -125,5 +131,17 @@
   <a href="https://www.twitter.com" target="_blank" class="fa fa-twitter"></a>
   <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
 </div>
+
+<script type="text/javascript">
+  var total = 0;
+
+  function added(coffee, price){
+
+    total += price;
+    alert(coffee + " added to basket.\nYour current total is: " +  total.toFixed(2));
+
+    document.getElementById("totalPrice").innerHTML = total.toFixed(2);   
+  }
+</script>
 </body>
 </html>

@@ -39,7 +39,7 @@
   </div>
   <div class="column medium">
   <p>Please enter your details below:</p>
-  <form id="signupform" action="javascript:;" onsubmit="myFunction();" style="text-align: center;">
+  <form id="signupform" action="javascript:;" onsubmit="submitted();" style="text-align: center;">
     
     First name <br>
 
@@ -70,7 +70,7 @@
     <span id="outputName" >____</span> the verification email will be sent to <span id="outputEmail">____</span>. 
     </p>
 
-    <p id="newsSignup" style="display:none">Your Signed up to Our Newsletter!</p>
+    <p id="newssignup" style="display:none">Your Signed up to Our Newsletter!</p>
   </form>
   </div>
 </div>
@@ -78,7 +78,7 @@
 
 
 <script type="text/javascript">
-function myFunction(){
+function submitted(){
   /*javascript for the form*/
     var firstname = document.getElementById("firstname").value;//When the button is pressed store value
     var lastname = document.getElementById("lastname").value;
@@ -92,19 +92,20 @@ function myFunction(){
     confirmation.style.display = "block";
 
     var checkBox = document.getElementById("newsletter");
-    var newsSignup = document.getElementById("newsSignup");
+    var newsSignup = document.getElementById("newssignup");
     if (checkBox.checked == true){
       newsSignup.style.display = "block";
-    } else {
+    }
+    else {
     newsSignup.style.display = "none";
   }
 }
 
 
-
 function reset(){
   document.getElementById("signupform").reset();
 }
+
 </script>
 
 
